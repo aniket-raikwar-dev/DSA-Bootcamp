@@ -1,4 +1,4 @@
-public class PrimeNumber {
+public class P01_PrimeNumber {
 
   public static void main(String[] args) {
 
@@ -21,4 +21,5 @@ public class PrimeNumber {
     }
     return true;
   }
+  
 }
