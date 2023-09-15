@@ -13,15 +13,12 @@ var topKFrequent = function(nums, k) {
          map.set(nums[i], map.get(nums[i]) + 1);
         }
     }
-   console.log("map: ", map)
-   console.log("freq: ", freqList);
    map.forEach((value, key) => {
-  console.log(`Key: ${key}, Value: ${value}`);
-  if(!freqList[value]) {
+     if(!freqList[value]) {
       freqList[value] = [];
-  }
-  freqList[value].push(key);
-});
+     }
+     freqList[value].push(key);
+    });
 
     const ans = [];
     for(let i=freqList.length - 1; i >=0; i--) {
